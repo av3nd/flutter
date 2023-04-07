@@ -1,0 +1,53 @@
+-first make a directory to keep the node project
+
+-then 'cd directory'
+-inside the directory type 'npm init'
+-give name to the project
+-enter everything
+
+-install dependecies for the project, install whatever dependices that is needed for the project
+ 'npm install express mongoose body-parser'
+ 'npm install bcrypt jsonwebtoken'
+ 'npm install bcrypt nodemon'
+
+-create file app.js and index.js inside the project
+
+make your server
+  index.js ==>
+
+const app = require("./app");
+
+
+const port = 3000;
+
+app.listen(port,()=>{
+    console.log(`Server Listening on Port http://localhost:${port}`);
+})
+
+app.js == >
+'const express = require('express');
+// const bodyParser = require("body-parser")
+// const UserRoute = require("./routes/user.routes");
+// const ToDoRoute = require('./routes/todo.router');
+const app = express();
+
+// app.use(bodyParser.json())
+
+// app.use("/",UserRoute);
+// app.use("/",ToDoRoute);
+
+module.exports = app;'
+
+-run project with 'node projectname'
+ 
+
+-also run nodemon by adding under scripts of package.json
+ "dev":"nodemon index"
+  
+  'npm run dev' to run nodemon
+
+  note : if you dont run nodemon you cannot relod tab 
+  you have to restart your server
+
+
+-now create directory 

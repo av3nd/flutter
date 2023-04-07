@@ -24,25 +24,15 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
 
 
 
-  final String title;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
 
 
-          title: Text(widget.title),
+          title: Text("Mainpage"),
         ),
         body: Text('Main Page')// This trailing comma makes auto-formatting nicer for build methods.
     );

@@ -1,0 +1,20 @@
+import 'package:c30aflutterpractice/Facultyclass.dart';
+
+class FullTimeFaculty extends Faculty {
+  double monthlySalary;
+
+  FullTimeFaculty(String fullname, int age, String address, this.hourlySalary)
+      : super(fullname, age, address);
+
+  @override
+  void calculateYeralySalary() {
+    print("Yearly Salary : ${monthlySalary * 12 }");
+  }
+}
+
+void main(){
+  FullTimeFaculty fulltimefaculty = FullTimeFaculty("Avend","21","brt",10000);
+  fulltimefaculty.calculateYearlySalary();
+  fulltimefaculty.displaydetails();
+
+}
