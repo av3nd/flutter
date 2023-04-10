@@ -1,6 +1,7 @@
 // multiplication table of 5
 void main() {
   int n = 5;
+  mul(n);
 }
 
 void mul(int n) {
